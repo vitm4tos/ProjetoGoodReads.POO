@@ -56,7 +56,7 @@ def janelainicial(): #parte de ANNA
 			novo_cad = [name, user, passw]  # os valores devem estar na mesma ordem das colunas
 
 			# adicionando ao DataFrame
-			usuarios_cad.loc[len(usuarios)] = novo_cad
+			usuarios_cad.loc[len(usuarios_cad)] = novo_cad
 			usuarios_cad.to_excel(usuarios, index=False) #index:False serve pra não add indice na tabela, algo que é padrão do pandas
 
 
