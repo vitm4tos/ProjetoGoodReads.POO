@@ -57,7 +57,7 @@ def janelainicial(): #parte de ANNA
 
 			# adicionando ao DataFrame
 			usuarios_cad.loc[len(usuarios_cad)] = novo_cad
-			usuarios_cad.to_excel(usuarios, index=False) #index:False serve pra não add indice na tabela, algo que é padrão do pandas
+			usuarios_cad.to_excel(usuarios_cad, index=False) #index:False serve pra não add indice na tabela, algo que é padrão do pandas
 
 
 		criação = ctk.CTkButton(janelacadast, text = 'Criar conta', command=criar_conta, fg_color ='black', hover_color = 'gray')
